@@ -5,13 +5,23 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>controladorCliente</servlet-name>
-  	<display-name>controladorCliente</display-name>
+  	<servlet-name>controladorUsuario</servlet-name>
+  	<display-name>controladorUsuario</display-name>
   	<description></description>
-  	<servlet-class>controlador.controladorCliente</servlet-class>
+  	<servlet-class>controlador.controladorUsuario</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>controladorProducto</servlet-name>
+  	<display-name>controladorProducto</display-name>
+  	<description></description>
+  	<servlet-class>controlador.controladorProducto</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>controladorCliente</servlet-name>
-  	<url-pattern>/controladorCliente</url-pattern>
+  	<servlet-name>controladorUsuario</servlet-name>
+  	<url-pattern>/controladorUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>controladorProducto</servlet-name>
+  	<url-pattern>/controladorProducto</url-pattern>
   </servlet-mapping>
 </web-app>
