@@ -1,30 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body bgcolor="#c5dec9">
+<body style="background-color: #AB807B;">
 
-<h1 align="center">Ingresar al Sistema</h1>
+<div class="container">
+    <h1 class="text-center mt-5">Ingresar al Sistema</h1>
 
-<form action="controladorUsuario" method="post" class="formulario">
-<table align="center" border="2">
-<tr>
-    <td>Usuario</td>
-    <td><input type="text" name="usuario"></td>
-</tr>
-<tr>
-    <td>Password</td>
-    <td><input type="password" name="password"></td>
-</tr>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="controladorUsuario" method="post" class="formulario mt-4 p-4 border rounded bg-white">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Ingrese su usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-outline-primary">Ingresar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-<tr align="center">
-    <td colspan="2"><input type="submit" value="Ingresar"></td>
-</tr>
-</table>
-</form>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
